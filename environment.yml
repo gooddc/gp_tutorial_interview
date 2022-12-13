@@ -1,6 +1,5 @@
 name: gp-tutorial
 channels:
-  - pytorch
   - conda-forge
   - defaults
 dependencies:
@@ -10,18 +9,19 @@ dependencies:
   - argon2-cffi-bindings=21.2.0=py310hca72f7f_0
   - asttokens=2.0.5=pyhd3eb1b0_0
   - attrs=22.1.0=py310hecd8cb5_0
+  - autograd=1.5=pyhd8ed1ab_0
   - babel=2.9.1=pyhd3eb1b0_0
   - backcall=0.2.0=pyhd3eb1b0_0
   - beautifulsoup4=4.11.1=py310hecd8cb5_0
   - blas=1.0=mkl
   - bleach=4.1.0=pyhd3eb1b0_0
+  - bottleneck=1.3.5=py310h4e76f89_0
   - brotli=1.0.9=hca72f7f_7
   - brotli-bin=1.0.9=hca72f7f_7
   - brotlipy=0.7.0=py310hca72f7f_1002
   - bzip2=1.0.8=h1de35cc_0
-  - ca-certificates=2022.12.7=h033912b_0
-  - celerite=0.4.2=py310hecf8f37_3
-  - certifi=2022.12.7=pyhd8ed1ab_0
+  - ca-certificates=2022.10.11=hecd8cb5_0
+  - certifi=2022.9.24=py310hecd8cb5_0
   - cffi=1.15.1=py310h6c40b1e_3
   - charset-normalizer=2.0.4=pyhd3eb1b0_0
   - contourpy=1.0.5=py310haf03e11_0
@@ -33,16 +33,14 @@ dependencies:
   - emcee=3.1.3=pyhd8ed1ab_0
   - entrypoints=0.4=py310hecd8cb5_0
   - executing=0.8.3=pyhd3eb1b0_0
-  - ffmpeg=4.3=h0a44026_0
   - fftw=3.3.9=h9ed2024_1
   - flit-core=3.6.0=pyhd3eb1b0_0
   - fonttools=4.25.0=pyhd3eb1b0_0
   - freetype=2.12.1=hd8bbffd_0
+  - future=0.18.2=pyhd8ed1ab_6
   - gettext=0.21.0=h7535e17_0
   - giflib=5.2.1=haf1e3a3_0
   - glib=2.69.1=hfff2838_2
-  - gmp=6.2.1=he9d5cce_3
-  - gnutls=3.6.15=hed9c0bf_0
   - gst-plugins-base=1.14.0=h4180768_2
   - gstreamer=1.14.0=h0fc69c2_2
   - icu=58.2=h0a44026_3
@@ -68,7 +66,6 @@ dependencies:
   - jupyterlab_widgets=1.0.0=pyhd3eb1b0_1
   - kiwisolver=1.4.2=py310he9d5cce_0
   - krb5=1.19.2=hcd88c3b_0
-  - lame=3.100=h1de35cc_0
   - lcms2=2.12=hf1fd2bf_0
   - lerc=3.0=he9d5cce_0
   - libbrotlicommon=1.0.9=hca72f7f_7
@@ -82,14 +79,11 @@ dependencies:
   - libgfortran=5.0.0=11_3_0_hecd8cb5_28
   - libgfortran5=11.3.0=h9dfd629_28
   - libiconv=1.16=hca72f7f_2
-  - libidn2=2.3.2=h9ed2024_0
   - libllvm12=12.0.0=h9b2ccf5_3
   - libpng=1.6.37=ha441bb4_0
   - libpq=12.9=h1c9f633_3
   - libsodium=1.0.18=h1de35cc_0
-  - libtasn1=4.16.0=h9ed2024_0
   - libtiff=4.4.0=h2cd0358_2
-  - libunistring=0.9.10=h9ed2024_0
   - libwebp=1.2.4=h56c3ce4_0
   - libwebp-base=1.2.4=hca72f7f_0
   - libxml2=2.9.14=hbf8cd5e_0
@@ -113,16 +107,16 @@ dependencies:
   - nbformat=5.7.0=py310hecd8cb5_0
   - ncurses=6.3=hca72f7f_3
   - nest-asyncio=1.5.5=py310hecd8cb5_0
-  - nettle=3.7.3=h230ac6f_1
   - notebook=6.5.2=py310hecd8cb5_0
   - notebook-shim=0.2.2=py310hecd8cb5_0
   - nspr=4.33=he9d5cce_0
   - nss=3.74=h47edf6a_0
+  - numexpr=2.8.4=py310h9638375_0
   - numpy=1.23.4=py310h9638375_0
   - numpy-base=1.23.4=py310ha98c3c9_0
-  - openh264=2.1.1=h8346a28_0
-  - openssl=1.1.1s=hfd90126_1
+  - openssl=1.1.1s=hca72f7f_0
   - packaging=21.3=pyhd3eb1b0_0
+  - pandas=1.5.2=py310h3ea8b11_0
   - pandocfilters=1.5.0=pyhd3eb1b0_0
   - parso=0.8.3=pyhd3eb1b0_0
   - pcre=8.45=h23ab428_0
@@ -137,6 +131,8 @@ dependencies:
   - psutil=5.9.0=py310hca72f7f_0
   - ptyprocess=0.7.0=pyhd3eb1b0_2
   - pure_eval=0.2.2=pyhd3eb1b0_0
+  - pybind11=2.10.1=py310ha23aa8a_0
+  - pybind11-global=2.10.1=py310ha23aa8a_0
   - pycparser=2.21=pyhd3eb1b0_0
   - pygments=2.11.2=pyhd3eb1b0_0
   - pyopenssl=22.0.0=pyhd3eb1b0_0
@@ -148,7 +144,6 @@ dependencies:
   - python-dateutil=2.8.2=pyhd3eb1b0_0
   - python-fastjsonschema=2.16.2=py310hecd8cb5_0
   - python_abi=3.10=2_cp310
-  - pytorch=1.13.0=py3.10_0
   - pytz=2022.1=py310hecd8cb5_0
   - pyzmq=23.2.0=py310he9d5cce_0
   - qt-main=5.15.2=h719ae48_7
@@ -172,8 +167,6 @@ dependencies:
   - tk=8.6.12=h5d9f67b_0
   - toml=0.10.2=pyhd3eb1b0_0
   - tomli=2.0.1=py310hecd8cb5_0
-  - torchaudio=0.13.0=py310_cpu
-  - torchvision=0.14.0=py310_cpu
   - tornado=6.2=py310hca72f7f_0
   - traitlets=5.1.1=pyhd3eb1b0_0
   - typing-extensions=4.4.0=py310hecd8cb5_0
