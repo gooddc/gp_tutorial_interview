@@ -1,0 +1,10 @@
+This is  a quick tutorial repo for Deborah Good's Smith interview teaching talk. 
+
+The enivronment.yml will let you make a conda env that includes all the required packages to run the notebook.
+
+run:
+conda env create -f environment.yml -n gp-tutorial
+conda activate myenv
+
+
+The original_celerite_tutorial.ipynb will be what we use in the demo but is also literally just the modeling tutorial from the docs.
