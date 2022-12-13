@@ -10,12 +10,12 @@ c = 3
 d = 0.1
 meas_t = np.sort(np.append(
     np.random.uniform(0, 3.8, 57),
-    np.random.uniform(8, 20, 250),
+    np.random.uniform(5.5, 10, 68),
 ))  # The input coordinates must be sorted
 yerr = np.random.uniform(0.08, 0.22, len(meas_t))
 meas_y = a * (meas_t-b) + np.sin(c*meas_t + d*(meas_t-b)**2) + yerr * np.random.randn(len(meas_t))
 
-true_t = np.linspace(0, 20, 100)
+true_t = np.linspace(0, 10, 50)
 true_y = a * (true_t-b) + np.sin(c*true_t + d*(true_t-b)**2)
 
 
